@@ -1,0 +1,8 @@
+id,name,age,city,salary,hire_date,year,age_group,salary_level,name_length,is_newcomer
+1,anna,28.0,Moscow,80000.0,2020-05-10,2020.0,средний,средняя,4,True
+2,ivan,24.0,Ekaterinburg,95000.0,2018-07-15,2018.0,молодой,средняя,4,False
+3,maria,22.0,Novosibirsk,95000.0,2021-03-01,2021.0,молодой,средняя,5,True
+4,dmitry,41.0,Moscow,105000.0,2015-11-20,2015.0,старший,высокая,6,False
+5,olga,29.0,Ekaterinburg,88000.0,2019-09-10,2019.0,средний,средняя,4,False
+6,alexey,19.0,Novosibirsk,60000.0,2022-01-12,2022.0,молодой,низкая,6,True
+7,ivan,34.0,Ekaterinburg,95000.0,,,средний,средняя,4,False
