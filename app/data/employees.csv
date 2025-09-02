@@ -1,0 +1,8 @@
+id,name,age,city,salary,hire_date,department_id
+1,Anna,28,Moscow,80000,2020-05-10,1
+2,Ivan,34,Ekaterinburg,95000,2018-07-15,2
+3,Maria,22,Novosibirsk,72000,2021-03-01,1
+4,Dmitry,41,Moscow,105000,2015-11-20,3
+5,Olga,29,Ekaterinburg,88000,2019-09-10,2
+6,Alexey,19,Novosibirsk,60000,2022-01-12,1
+7,Irina,38,London,115000,2016-04-05,3

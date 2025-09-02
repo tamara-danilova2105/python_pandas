@@ -80,3 +80,23 @@ def stats_by_city(df: pd.DataFrame) -> pd.DataFrame:
     )
     print('Средний возраст, зарплата и количество взрослых по каждому городу', stats)
     return df
+
+def feature_part_1():
+    df = load_data()
+    df = add_is_adult(df)
+    df = get_info_lesson_one(df)
+    df = add_salary_in_k(df)
+    df = group_by_city(df)
+    df = sort_by_age(df)
+    df = filter_age_30_plus(df)
+    df = filter_moscow(df)
+    df = count_people_by_city(df)
+    df = city_with_max_avg_salary(df)
+    df = names_to_lower(df)
+    df = add_has_a(df)
+    df = add_name_length(df)
+    df = filter_adults_novosib(df)
+    df = top_2_by_salary(df)
+    df = stats_by_city(df)
+    save_data(df)
+    print("✅ Обработка завершена")
