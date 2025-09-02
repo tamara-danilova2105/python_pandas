@@ -1,0 +1,7 @@
+name,age,city,salary,is_adult,salary_in_k,name_lower,has_a,name_length
+Anna,28,Moscow,80000,True,80.0,anna,True,4
+Ivan,34,Ekaterinburg,95000,True,95.0,ivan,True,4
+Maria,22,Novosibirsk,72000,True,72.0,maria,True,5
+Dmitry,41,Moscow,105000,True,105.0,dmitry,False,6
+Olga,29,Ekaterinburg,88000,True,88.0,olga,True,4
+Alexey,19,Novosibirsk,60000,True,60.0,alexey,True,6
