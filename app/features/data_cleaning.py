@@ -70,7 +70,7 @@ def add_is_newcomer(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def feature_part_3():
+def data_cleaning():
     df = load_dirty_data()
 
     print("\n=== Исходные данные ===\n", df.head())

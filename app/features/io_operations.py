@@ -34,7 +34,7 @@ def concat_multiple(files: list[str]) -> pd.DataFrame:
     return pd.concat(dfs, ignore_index=True)
 
 
-def feature_part_6():
+def io_operations():
     df = load_csv()
 
     # CSV

@@ -41,7 +41,7 @@ def plot_salary_boxplot(df: pd.DataFrame):
     plt.show()
 
 
-def feature_part_4():
+def visualization():
     df = load_clean_data()
 
     plot_age_distribution(df)

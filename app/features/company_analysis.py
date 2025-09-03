@@ -54,7 +54,7 @@ def pivot_count_by_year_department(df: pd.DataFrame) -> pd.DataFrame:
         aggfunc="count",
     )
 
-def feature_part_2():
+def company_analysis():
     employees, departments, cities = load_data()
 
     # Объединение данных

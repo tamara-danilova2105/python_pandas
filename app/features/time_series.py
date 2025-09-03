@@ -45,7 +45,7 @@ def slice_by_date(df: pd.DataFrame):
         print("\n⚠️ Нет данных за Январь–Июнь 2020")
 
 
-def feature_part_5():
+def time_series():
     df = load_clean_data()
 
     resample_by_year(df)

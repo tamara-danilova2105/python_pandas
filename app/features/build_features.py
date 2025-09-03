@@ -81,7 +81,7 @@ def stats_by_city(df: pd.DataFrame) -> pd.DataFrame:
     print('Средний возраст, зарплата и количество взрослых по каждому городу', stats)
     return df
 
-def feature_part_1():
+def build_features():
     df = load_data()
     df = add_is_adult(df)
     df = get_info_lesson_one(df)
