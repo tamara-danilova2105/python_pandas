@@ -7,7 +7,7 @@ def load_csv(path="app/data/employees_clean.csv"):
 
 def save_csv(df, path="app/data/exported.csv"):
     df.to_csv(path, index=False)
-    print(f"✅ CSV сохранён: {path}")
+    print(f"CSV сохранён: {path}")
 
 
 def load_excel(path="app/data/employees.xlsx"):
@@ -16,7 +16,7 @@ def load_excel(path="app/data/employees.xlsx"):
 
 def save_excel(df, path="app/data/report.xlsx"):
     df.to_excel(path, sheet_name="Report", index=False)
-    print(f"✅ Excel сохранён: {path}")
+    print(f"Excel сохранён: {path}")
 
 
 def load_json(path="app/data/employees.json"):
@@ -25,11 +25,10 @@ def load_json(path="app/data/employees.json"):
 
 def save_json(df, path="app/data/employees_out.json"):
     df.to_json(path, orient="records", force_ascii=False, indent=2)
-    print(f"✅ JSON сохранён: {path}")
+    print(f"JSON сохранён: {path}")
 
-
+#Склеиваем несколько CSV в один
 def concat_multiple(files: list[str]) -> pd.DataFrame:
-    """Склеиваем несколько CSV в один"""
     dfs = [pd.read_csv(f) for f in files]
     return pd.concat(dfs, ignore_index=True)
 
@@ -51,4 +50,4 @@ def io_operations():
         "app/data/employees_clean.csv",
         "app/data/employees_clean.csv"
     ])
-    print("\n✅ Объединённые данные (2 файла):\n", combined.head())
+    print("\n Объединённые данные (2 файла):\n", combined.head())

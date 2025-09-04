@@ -6,7 +6,7 @@ def load_dirty_data(path: str = "app/data/employees_dirty.csv") -> pd.DataFrame:
 
 #Вывод информации о пропусках
 def check_missing(df: pd.DataFrame):
-    print("\n🔎 Пропуски:\n", df.isna().sum())
+    print("\n Пропуски:\n", df.isna().sum())
     return df
 
 #Заполняем пропуски: age на среднее, salary на медиана
@@ -20,7 +20,7 @@ def remove_duplicates(df: pd.DataFrame) -> pd.DataFrame:
     before = len(df)
     df = df.drop_duplicates()
     after = len(df)
-    print(f"\n✅ Удалено дублей: {before - after}")
+    print(f"\n Удалено дублей: {before - after}")
     return df
 
 #Удаляем аномалии: age < 0 или salary < 10000
@@ -28,7 +28,7 @@ def fix_anomalies(df: pd.DataFrame) -> pd.DataFrame:
     before = len(df)
     df = df[(df["age"] >= 0) & (df["salary"] >= 10000)]
     after = len(df)
-    print(f"\n✅ Удалено аномальных строк: {before - after}")
+    print(f"\n Удалено аномальных строк: {before - after}")
     return df
 
 #Убираем пробелы и приводим имена к нижнему регистру
@@ -82,7 +82,7 @@ def data_cleaning():
     df = clean_names(df)
     df = convert_dates(df)
 
-    # 🔹 Фичи-инжиниринг
+    #Фичи-инжиниринг
     df = add_age_group(df)
     df = add_salary_level(df)
     df = add_name_length(df)
@@ -91,4 +91,4 @@ def data_cleaning():
     print("\n=== Итоговые очищенные данные ===\n", df.head())
 
     df.to_csv("app/data/employees_clean.csv", index=False)
-    print("\n💾 Файл сохранён: app/data/employees_clean.csv")
+    print("\nФайл сохранён: app/data/employees_clean.csv")

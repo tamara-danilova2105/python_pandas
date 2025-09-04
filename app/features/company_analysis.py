@@ -63,28 +63,28 @@ def company_analysis():
 
     # 1. Средняя зарплата по департаментам
     avg_salary = avg_salary_by_department(df)
-    print("\n✅ Средняя зарплата по департаментам:\n", avg_salary)
+    print("\nСредняя зарплата по департаментам:\n", avg_salary)
 
     # 2. Количество сотрудников по регионам
     count_region = count_employees_by_region(df)
-    print("\n✅ Количество сотрудников по регионам:\n", count_region)
+    print("\nКоличество сотрудников по регионам:\n", count_region)
 
     # 3. Департамент с самой высокой средней зарплатой
     dep, salary = department_with_max_salary(df)
-    print(f"\n✅ Департамент с самой высокой средней зарплатой: {dep} ({salary})")
+    print(f"\n Департамент с самой высокой средней зарплатой: {dep} ({salary})")
 
     # 4. Количество сотрудников по годам найма
     hire_years = employees_by_hire_year(df)
-    print("\n✅ Количество сотрудников по годам найма:\n", hire_years)
+    print("\nКоличество сотрудников по годам найма:\n", hire_years)
 
     # 5. Pivot: средняя зарплата по регионам и департаментам
     pivot_salary = pivot_salary_by_region_department(df)
-    print("\n✅ Pivot: средняя зарплата по регионам и департаментам:\n", pivot_salary)
+    print("\nPivot: средняя зарплата по регионам и департаментам:\n", pivot_salary)
     pivot_salary.to_csv("app/data/pivot_salary.csv")
 
     # 6. Pivot: количество сотрудников по годам и департаментам
     pivot_count = pivot_count_by_year_department(df)
-    print("\n✅ Pivot: количество сотрудников по годам и департаментам:\n", pivot_count)
+    print("\nPivot: количество сотрудников по годам и департаментам:\n", pivot_count)
     pivot_count.to_csv("app/data/pivot_count.csv")
 
     return df

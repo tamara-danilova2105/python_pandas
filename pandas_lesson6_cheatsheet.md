@@ -1,4 +1,4 @@
-# 📂 I/O Operations (Урок 6)
+# I/O Operations (Урок 6)
 
 ## CSV
 

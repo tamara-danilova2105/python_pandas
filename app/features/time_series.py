@@ -35,14 +35,14 @@ def rolling_avg_salary(df: pd.DataFrame):
 #Срез данных по датам
 def slice_by_date(df: pd.DataFrame):
     try:
-        print("\n✅ Все за 2020 год:\n", df.loc["2020"])
+        print("\nВсе за 2020 год:\n", df.loc["2020"])
     except KeyError:
-        print("\n⚠️ Нет данных за 2020 год")
+        print("\nНет данных за 2020 год")
 
     try:
-        print("\n✅ Январь–Июнь 2020:\n", df.loc["2020-01":"2020-06"])
+        print("\nЯнварь–Июнь 2020:\n", df.loc["2020-01":"2020-06"])
     except KeyError:
-        print("\n⚠️ Нет данных за Январь–Июнь 2020")
+        print("\nНет данных за Январь–Июнь 2020")
 
 
 def time_series():
